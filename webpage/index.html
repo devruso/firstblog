@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>Free space</title>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <a href="index.html" id="header-title"> My blog</a>
+        <ul id="header-nav">
+          <li><a href="about.html">About</a></li>
+          <li><a href="mailto:jamilsonjr@live.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="content">
+      <div class="post-container">
+        <div class="post">
+          <div class="post-author">
+            <img src="pp.jpg" />
+            <span>Me</span>
+          </div>
+          <p class="post-date">13/10/2020</p>
+          <h3 class="post-title">Becoming a web developer</h3>
+          <div class="post-content">
+            <p>
+              A jornada para o web dev continua. Para ser sincero, lidar com
+              back-end tem sido mais complexo do que eu achei que seria, mas
+              acredito que com o tempo irei me adaptar melhor às adversidades e
+              me tornarei um programador. No momento estou fazendo este primeiro
+              site para internalizar os conhecimentos que tenho.
+            </p>
+            <p>
+              No momento de criação deste site, ainda sei bem pouco de
+              javascript. Espero que quando eu olhe para ele daqui a algum
+              tempo, eu tenha algum sentimento de nostalgia (e tambem de
+              maestria em javascript).
+            </p>
+            <p class="post-date">26/11/2020</p>
+          <h3 class="post-title">Construindo bases</h3>
+          <div class="post-content">
+            <p>
+              Lembrei que tinha feito esse blog como projeto de um aplicativo de programação que eu estava
+              fazendo, e então salvei no github para ter a memória do primeiro projeto. Hoje, ao fazer meu
+              primeiro projeto real world, me deu uma vontade de dar uma leve atualizada neste blog que eu comecei fiz há um tempo, então nada mais interessante do que colocar o que eu aprender de novo nele, não?
+
+            </p>
+            <p>
+              Os conhecimentos do meu eu do passado eram fracos em javascript e até o dia de hoje estão, mas para ser sincero, me sinto bem quanto as bases que estou desenvolvendo.
+              Bom, assumo que estava nervoso quanto a minha lentidão de aprendizado, mas comecei a me sentir melhor após entender com com mais facilidade como o DOM funciona. Bem, ainda estou no início, mas ao longo do tempo acredito que me sentirei mais confortável.
+              Minha meta para o futuro é me tornar full stack ainda na faculdade.
+            </p>
+          </div>
+          
+          <div class="post-content">
+            <p class="post-date">10/01/2021</p>
+          <h3 class="post-title">Regular expressions & life</h3>
+          <p>So, after almost two months since my last update, i've decided that i'm going to save some of my knowledge here, because i may need it in the future (which i'm almost certain of).
+            Anyway, Regular expressions have too many stuff to remember, so i realized that i'm not able to remember everything. At least, not for now. And honestly, i dont even know at the moment what's the real use of regex.
+            Okay, let me begin my resume.
+            Oh, actually let me create a quick update of what's going on in my student life for now.
+            Well, i realized in the beginning of december that was taking too long to get out of the very basics, and after thinking about it for a while, i noticed that i was afraid of getting further, since for a long time in my life i felt less capable than other people.
+            After thinking about this, i started to study faster, so i'm trying to finish my javascript course untill the end of February, wich i think that is very possible. And this is because studying how to code gets easier. i was very afraid that it wouldn't get, but it did!
+            at the end of december i've seen a video about cs50 web(cs50, if you dont know, r harvard programming courses). Well, the certificate in BRL is about (with dolar current quotation) 1024 R$. But gladly there's a student's support staff.
+            After writing the reason's why i should have a discount, i got a response after 2 days, and in 31 of december i received a 90% discount! It made me the most happier person in the world. Struggling for too many years (at least for me) and then getting an oportunity like this... it made me too happy.
+            Well, after this resume, let me get to the point:
+          </p>
+          <p style= "text-align:center; font-size: 30px;">REGULAR EXPRESSIONS</p>
+
+          <p>The <strong>.test()</strong>str method takes the regex, applies it to a string (which is placed inside the parentheses), and returns true or false if your pattern finds something or not. <br>
+             You can also extract the actual matches you found with the <strong>.match()</strong> method. <br>
+             To search or extract a pattern more than once, you can use the <strong>g</strong> flag. <br> 
+             Sometimes you won't (or don't need to) know the exact characters in your patterns.The wildcard character <strong>.</strong> will match any one character. ex: /.un/ returns: sun,run,fun,bun etc. <br>
+            You can search for multiple patterns using the alternation or OR operator: <strong>|</strong>. ex:<strong>/yes|no|maybe/</strong> ; <br>
+            
+             But sometimes, you might want to also match case differences, in this situation you can use the i flag. ex: /ignorecase/<strong>i</strong>; <br>
+            You can search for a literal pattern with some flexibility with character classes. Character classes allow you to define a group of characters you wish to match by placing them inside square <strong>([ and ])</strong> brackets. ex: /b[aiu]g/; <br>
+            Inside a character set, you can define a range of characters to match using a hyphen character: <strong>-</strong>. ex: /[a-e]at/;<br>
+            Using the hyphen (-) to match a range of characters is not limited to letters. It also works to match a range of numbers. ex: <strong>let myRegex = /[a-z0-9]/ig;</strong><br>
+            To create a negated character set, you place a caret character (^) after the opening bracket and before the characters you do not want to match. ex: <strong>/[^aeiou]/gi</strong><br>
+            You can use the + character to check if that is the case. Remember, the character or pattern has to be present consecutively. That is, the character has to repeat one after the other. ex: <strong>/a+/g</strong>;<br>
+            There's also an option that matches characters that occur zero or more times. ex: <strong>let goRegex = /go*/;</strong>.<br>
+            In regular expressions, a greedy match finds the longest possible part of a string that fits the regex pattern and returns it as a match. The alternative is called a lazy match, which finds the smallest possible part of the string that satisfies the regex pattern. ex: <strong>t[a-z]*?i/ returns ["ti"].</strong><br>
+            <br><br>
+            Outside of a character set, the caret is used to search for patterns at the beginning of strings. ex: <strong>let calRegex = /^Cal/;</strong>
+            You can search the end of strings using the dollar sign character $ at the end of the regex. ex: <strong>let storyRegex = /story$/;</strong>
+            To look for one or more characters:<strong>+</strong> .<br>
+          To match for zero or more characters: <strong>*</strong>.<br>
+          If you want to match a certain range of patterns with quantity specifiers (Quantity specifiers are used with curly brackets ({ and }). Example:<strong> /Oh{3,6}\sno/</strong>;<br>
+          Sometimes you only want to specify the lower number of patterns with no upper limit: <strong>/haz{4,}ah/</strong> ;<br>
+          You can specify the lower and upper number of patterns with quantity specifiers using curly brackets:<strong>/tim{4}ber/</strong> ;<br>
+          Sometimes the patterns you want to search for may have parts of it that may or may not exist: <strong>/favou?rite/;</strong> <br>
+          How to match white space: <strong>\s</strong> .<br>
+          How to match everything but white space: <strong>\S</strong>. <br>
+          The closest character class in JavaScript to match the alphabet is <strong>\w</strong>. This shortcut is equal to [A-Za-z0-9_]. This character class matches upper and lowercase letters plus numbers. ex: <strong>/[\w+]/g</strong> <br>
+          You can search for the opposite of the \w with <strong>\W</strong>. Note, the opposite pattern uses a capital letter. This shortcut is the same as [^A-Za-z0-9_]. <br>
+          The shortcut to look for digit characters is <strong>\d</strong>, with a lowercase d. This is equal to the character class <strong>[0-9]</strong> , which looks for a single character of any number between zero and nine. <br>
+          The shortcut to look for non-digit characters is <strong>\D</strong> . This is equal to the character class <strong>[^0-9]</strong> , which looks for a single character that is not a number between zero and nine.  <br>
+          Sometimes we want to check for groups of characters using a Regular Expression and to achieve that we use parentheses <strong>()</strong>.If you want to find either Penguin or Pumpkin in a string, you can use the following Regular Expression: <strong>/P(engu|umpk)in/g</strong>. <strong>/(Franklin|Eleanor) .*Roosevelt/g;</strong> <br> 
+          <strong>Regular Expressions: Reuse Patterns Using Capture Groups.</strong> To specify where that repeat string will appear, you use a backslash (\) and then a number. This number starts at 1 and increases with each additional capture group you use. An example would be \1 to match the first group. <br>
+          Searching is useful. However, you can make searching even more powerful when it also changes (or replaces) the text you match.You can search and replace text in a string using .replace() on a string.  ex: "Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1');     <br>
+          <br> <br>
+          Lookaheads are patterns that tell JavaScript to look-ahead in your string to check for patterns further along. A positive lookahead will look to make sure the element in the search pattern is there, but won't actually match it. A positive lookahead is used as <strong>(?=...)</strong>  where the  <strong>...</strong> is the required part that is not matched. On the other hand, a negative lookahead will look to make sure the element in the search pattern is not there <strong>(?!...)</strong>.  <br>
+            
+          <br><br> test example: Use lookaheads in the pwRegex to match passwords that are greater than 5 characters long, do not begin with numbers, and have two consecutive digits. <br>
+            answer: <strong>let pwRegex = /^\D(?=\w{5,})(?=\w*\d{2})/;</strong>
+                       
+        
+        </p>  
+        </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <div class="column">
+          <h4>My links</h4>
+          <p>
+            <a href="https://facebook.com/jamilsone/">Facebook</a>
+            <a
+              href="https://www.linkedin.com/in/jamilson-j%C3%BAnior-34b5341b2/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+        <div class="column">
+          <h4>My story</h4>
+          <p>I'm in the road to become a full stack</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
